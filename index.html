@@ -1,0 +1,88 @@
+<!-- Demonstration For Plugin Mobi Menu -->
+<!-- 
+	This is a demonstration for the plugin Mobi Menu.
+	-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MobiMenu</title>
+		<link rel="stylesheet" href="css/mobiMenu.css">
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+	<body class="no-js">
+		<nav class="topNav">
+			<ul>
+				<li>
+					<a href="#menu" class="menu-toggle"><img src="img/main.png" /></a>
+				</li>
+				<li>
+					<a href="#social" class="menu-toggle"><img src="img/social.png" /></a>
+				</li>
+			</ul>
+		</nav>
+		<div class='cssmenu' id="menu">
+			<ul>
+				<li class='active'>
+					<a href='index.html'><span>Home</span></a>
+				</li>
+				<li class='has-sub'>
+					<a href='#'><span>Products</span></a>
+					<ul>
+						<li class='has-sub'>
+							<a href='#'><span>Product 1</span></a>
+							<ul>
+								<li>
+									<a href='#'><span>Sub Item</span></a>
+								</li>
+								<li class='last'>
+									<a href='#'><span>Sub Item</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class='has-sub'>
+							<a href='#'><span>Product 2</span></a>
+							<ul>
+								<li>
+									<a href='#'><span>Sub Item</span></a>
+								</li>
+								<li class='last'>
+									<a href='#'><span>Sub Item</span></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href='#'><span>About</span></a>
+				</li>
+				<li class='last'>
+					<a href='#'><span>Contact</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class='cssmenu' id="social">
+			<ul>
+				<li>
+					<a href='http://www.facebook.com'><img src="img/facebook.png" /></a>
+					<a href='#'><img src="img/linked.png" /></a>
+					<a href='#'><img src="img/twitter.png" /></a>
+				</li>
+			</ul>
+		</div>
+		<!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/modernizr.min.js"></script>
+		<script src="js/mobiMenu.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(document).ready(function() {
+
+				$("topNav").mobiMenu();
+
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+Instructions:
+
+1. Create a division for your nested list. Give it the class cssmenu and an id of your choice. 
+   (In index.html we have used 'menu')
+2. Similarly create a division for social icons and give it an id.
+
+3. In your navigation list (ul list) point your anchor tags to the created divs by giving them the ids of the divs.
+
+4. In the div for the nested menu create nested lists.
+
+		<ul>
+			<a></a>
+			<li><a></a></li>
+			<li>
+				<a></a>
+				<ul>
+				</ul>
+			</li>
+		</ul>
+   If an li element contains a list give it the class has-sub. Make sure that you include the contents of the anchor
+   tag in a <span> element.
+   
+ 5. For the social icons just create an <ul> list and in the anchor tags within the elements include your image tags for
+    social media icons.
+    
+ 6. In the head tag include mobiMenu.css
+ 
+ 7. Before the </body> tag include jquery.js mobiMenu.js and modernizr.js (Always use the .min versions in production)
+
+
+ 8. Create a script tag after including all necessary javascript files and in their invoke the plugin on your <nav> like this
+ 
+		$(document).ready(function() {
+
+				$("topNav").mobiMenu();
+
+			});
+			
+    Where topNav is the class of the <nav> element 
+
+
+ If further assistance is required email us on :
+
+ 	info@xetecx.com
+
+ You can also visit our website www.xetecx.com and contact us from there.
+
+ 
